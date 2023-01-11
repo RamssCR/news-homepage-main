@@ -1,0 +1,67 @@
+@use 'vars' as vars;
+
+.news{
+    background-color: vars.$veryDarkBlue;
+    padding: 1.2em 1.1em;
+
+    @media only screen and (min-width: 1440px){
+        width: 26.5em;
+        float: right;
+        position: absolute;
+        top: 8.35em;
+        right: 2.4em;
+        padding: 2em;
+    }
+
+    .new{
+        color: vars.$softOrange;
+        font-size: 2em;
+        margin-bottom: 0.8em;
+
+        @media only screen and (min-width: 1440px){
+            font-size: 3em;
+        }
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+        gap: 2.4em;
+
+        @media only screen and (min-width: 1440px){
+            gap: 3.95em;
+        }
+
+        .entitle{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+
+            .new-title{
+                color: vars.$offWhite;
+                font-size: 1.3em;
+
+                &:hover{
+                    color: vars.$softOrange;
+                    cursor: pointer;
+                }
+
+                @media only screen and (min-width: 1440px){
+                    font-size: 1.5em;
+                }
+            }
+
+            p{
+                @media only screen and (min-width: 1440px){
+                    font-size: 1.2em;
+                    line-height: 1.2em;
+                }
+            }
+        }
+
+        .bar{
+            width: 100%;
+            border-bottom: 1px solid vars.$offWhite;
+        }
+    }
+}

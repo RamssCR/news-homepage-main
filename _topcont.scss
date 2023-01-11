@@ -1,0 +1,27 @@
+.top-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.top-container .logo{
+    @media only screen and (min-width: 1440px){
+        width: 5em;
+    }
+}
+
+.top-container .logo:hover{
+    cursor: pointer;
+}
+
+.top-container .menu:hover{
+    cursor: pointer;
+}
+
+.top-container .menu{
+    @media only screen and (min-width: 1440px){
+        display: none;
+    }
+}

@@ -1,0 +1,85 @@
+@use 'vars' as vars;
+
+.navbar{
+    display: none;
+
+    @media only screen and (min-width: 1440px){
+        display: block;
+        overflow: hidden;
+
+        ul{
+            display: flex;
+
+            li{
+                list-style: none;
+
+                a{
+                    display: block;
+                    text-decoration: none;
+                    padding: 1em 1.2em;
+                    font-size: 1.2em;
+                    color: vars.$darkGrayishBlue;
+                    transition: 200ms all ease;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        color: vars.$softOrange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal{
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: end;
+
+    .modal-navbar{
+        width: 15em;
+        height: 100vh;
+        background-color: vars.$offWhite;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        padding: 2em 1.5em;
+
+
+        .fflex{
+            display: flex;
+            justify-content: end;
+            margin-bottom: 4.5em;
+
+            .menu-close:hover{
+                cursor: pointer;
+            }
+        }
+
+        ul{
+            li{
+                list-style: none;
+
+                a{
+                    display: block;
+                    text-decoration: none;
+                    color: vars.$veryDarkBlue;
+                    font-size: 1.1em;
+                    padding: 0.8em 0;
+                    transition: 200ms all ease;
+                }
+
+                a:hover{
+                    color: vars.$softOrange;
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

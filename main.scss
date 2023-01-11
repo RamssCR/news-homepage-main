@@ -1,0 +1,41 @@
+@use 'vars' as vars;
+@use 'navbar' as nv;
+@use 'topcont' as tc;
+@use 'banners' as ban;
+@use 'presentation' as present;
+@use 'news' as news;
+@use 'newslist' as nl;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: vars.$font;
+    width: auto;
+    padding: 0.5em 1em;
+}
+
+p{
+    font-size: vars.$paragraph;
+    color: vars.$darkGrayishBlue;
+}
+
+.attribution{
+    text-align: center;
+    font-size: 0.9em;
+    color: vars.$veryDarkBlue;
+    margin-bottom: 0.5em;
+
+    a{
+        text-decoration: none;
+        color: vars.$softRed;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

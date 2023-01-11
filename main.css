@@ -1,0 +1,345 @@
+.navbar {
+  display: none;
+}
+@media only screen and (min-width: 1440px) {
+  .navbar {
+    display: block;
+    overflow: hidden;
+  }
+  .navbar ul {
+    display: flex;
+  }
+  .navbar ul li {
+    list-style: none;
+  }
+  .navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 1em 1.2em;
+    font-size: 1.2em;
+    color: #5d5f79;
+    transition: 200ms all ease;
+  }
+  .navbar ul li a:hover {
+    transform: scale(1.1);
+    color: #e9ab53;
+  }
+}
+
+.modal {
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: end;
+}
+.modal .modal-navbar {
+  width: 15em;
+  height: 100vh;
+  background-color: #fffdfa;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 2em 1.5em;
+}
+.modal .modal-navbar .fflex {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 4.5em;
+}
+.modal .modal-navbar .fflex .menu-close:hover {
+  cursor: pointer;
+}
+.modal .modal-navbar ul li {
+  list-style: none;
+}
+.modal .modal-navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: #00001a;
+  font-size: 1.1em;
+  padding: 0.8em 0;
+  transition: 200ms all ease;
+}
+.modal .modal-navbar ul li a:hover {
+  color: #e9ab53;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.top-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 0;
+}
+
+@media only screen and (min-width: 1440px) {
+  .top-container .logo {
+    width: 5em;
+  }
+}
+
+.top-container .logo:hover {
+  cursor: pointer;
+}
+
+.top-container .menu:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1440px) {
+  .top-container .menu {
+    display: none;
+  }
+}
+
+.mobile-img {
+  width: 100%;
+}
+@media only screen and (min-width: 1440px) {
+  .mobile-img {
+    display: none;
+  }
+}
+
+.desktop-img {
+  display: none;
+}
+@media only screen and (min-width: 1440px) {
+  .desktop-img {
+    display: block;
+    width: 63em;
+  }
+}
+
+.presentation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 1.2em 0 4em 0;
+}
+@media only screen and (min-width: 1440px) {
+  .presentation {
+    flex-direction: row;
+    margin-top: 2.2em;
+  }
+}
+.presentation .title {
+  color: #00001a;
+  font-weight: 800;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+@media only screen and (min-width: 1440px) {
+  .presentation .title {
+    font-size: 4.5em;
+    width: 6.4em;
+  }
+}
+.presentation .flexx {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+@media only screen and (min-width: 1440px) {
+  .presentation .flexx {
+    height: 14.7em;
+    justify-content: space-between;
+  }
+}
+.presentation .flexx .description {
+  line-height: 1.7em;
+}
+@media only screen and (min-width: 1440px) {
+  .presentation .flexx .description {
+    width: 23.5em;
+    font-size: 1.18em;
+  }
+}
+.presentation .flexx .btn-read {
+  width: 10.5em;
+  background-color: #f15e50;
+  color: #fffdfa;
+  padding: 0.7em 0;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border: none;
+  transition: 300ms all ease;
+}
+@media only screen and (min-width: 1440px) {
+  .presentation .flexx .btn-read {
+    padding: 0.9em 0;
+  }
+}
+.presentation .flexx .btn-read:hover {
+  background-color: #00001a;
+  cursor: pointer;
+}
+
+.news {
+  background-color: #00001a;
+  padding: 1.2em 1.1em;
+}
+@media only screen and (min-width: 1440px) {
+  .news {
+    width: 26.5em;
+    float: right;
+    position: absolute;
+    top: 8.35em;
+    right: 2.4em;
+    padding: 2em;
+  }
+}
+.news .new {
+  color: #e9ab53;
+  font-size: 2em;
+  margin-bottom: 0.8em;
+}
+@media only screen and (min-width: 1440px) {
+  .news .new {
+    font-size: 3em;
+  }
+}
+.news .flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4em;
+}
+@media only screen and (min-width: 1440px) {
+  .news .flex {
+    gap: 3.95em;
+  }
+}
+.news .flex .entitle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.news .flex .entitle .new-title {
+  color: #fffdfa;
+  font-size: 1.3em;
+}
+.news .flex .entitle .new-title:hover {
+  color: #e9ab53;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1440px) {
+  .news .flex .entitle .new-title {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .news .flex .entitle p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+}
+.news .flex .bar {
+  width: 100%;
+  border-bottom: 1px solid #fffdfa;
+}
+
+.news-list {
+  width: 100%;
+  margin: 5em 0 3em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+@media only screen and (min-width: 1440px) {
+  .news-list {
+    width: 98.3%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.news-list .news-on-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+@media only screen and (min-width: 1440px) {
+  .news-list .news-on-list {
+    width: 27em;
+    gap: 1.5em;
+  }
+}
+.news-list .news-on-list img {
+  width: 6.5em;
+}
+@media only screen and (min-width: 1440px) {
+  .news-list .news-on-list img {
+    width: 8em;
+    height: 9em;
+  }
+}
+.news-list .news-on-list .b-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 8em;
+}
+@media only screen and (min-width: 1440px) {
+  .news-list .news-on-list .b-desc {
+    padding-right: 3em;
+  }
+}
+.news-list .news-on-list .b-desc h3 {
+  font-size: 2.2em;
+  color: #c5c6ce;
+}
+.news-list .news-on-list .b-desc h4 {
+  font-size: 1.1em;
+  font-weight: 800;
+}
+.news-list .news-on-list .b-desc h4:hover {
+  color: #e9ab53;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1440px) {
+  .news-list .news-on-list .b-desc p {
+    font-size: 1em;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  width: auto;
+  padding: 0.5em 1em;
+}
+
+p {
+  font-size: 15px;
+  color: #5d5f79;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.9em;
+  color: #00001a;
+  margin-bottom: 0.5em;
+}
+.attribution a {
+  text-decoration: none;
+  color: #f15e50;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=main.css.map */
